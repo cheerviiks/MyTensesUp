@@ -243,4 +243,63 @@ button:disabled {
 
 }
 
+/* ====== АДАПТАЦИЯ ПОД ТЕЛЕФОН ====== */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .tense {
+        margin: 20px 10px;
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .exercise {
+        margin: 15px 10px;
+        padding: 15px;
+    }
+
+    button {
+        padding: 12px 14px;
+        font-size: 15px;
+    }
+
+    .start-btn {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .task button {
+        display: inline-block;
+        margin: 6px 4px;
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .words {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .sentence {
+        min-height: 44px;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+        background: #ffffff;
+        border: 2px dashed #b3e5ff;
+    }
+}
 
