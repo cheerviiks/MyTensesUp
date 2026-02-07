@@ -1,0 +1,78 @@
+<div class="tense">
+    <h2>Present Continuous</h2>
+    
+    <section class="theory">
+        <h3>Когда используется Present Continuous?</h3>
+        <ul>
+            <li>Действие происходит <b>прямо сейчас</b></li>
+            <li>Временное действие</li>
+            <li>Запланированное действие в ближайшем будущем</li>
+        </ul>
+        <h3>Как образуется?</h3>
+        <p><b>am / is / are + глагол + ing</b></p>
+        <p class="example"> I am reading now.<br> She is watching TV.<br> They are playing football. </p>
+        <h4>Слова-маркеры:</h4>
+        <p>now, at the moment, right now, today</p>
+    </section>
+    
+    <!-- Упражнение 1 -->
+    <button class="start-btn" onclick="toggleExercise('ex1')">Упражнение 1 — выбери правильную форму</button>
+    <div id="ex1" class="exercise">
+        <div class="task">
+            <p>1. She ___ (read) a book now.</p>
+            <button onclick="check(this,false)">reads</button>
+            <button onclick="check(this,true)">is reading</button>
+            <button onclick="check(this,false)">read</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>2. They ___ (play) football at the moment.</p>
+            <button onclick="check(this,true)">are playing</button>
+            <button onclick="check(this,false)">play</button>
+            <button onclick="check(this,false)">plays</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>3. I ___ (do) my homework now.</p>
+            <button onclick="check(this,false)">do</button>
+            <button onclick="check(this,true)">am doing</button>
+            <button onclick="check(this,false)">does</button>
+            <p class="result"></p>
+        </div>
+    </div>
+    
+    <!-- Упражнение 2 -->
+    <button class="start-btn" onclick="toggleExercise('ex2')">Упражнение 2 — составь предложение</button>
+    <div id="ex2" class="exercise">
+        <p>Собери предложение:</p>
+        <div class="words">
+            <span onclick="addWord(this)">is</span>
+            <span onclick="addWord(this)">She</span>
+            <span onclick="addWord(this)">watching</span>
+            <span onclick="addWord(this)">TV</span>
+        </div>
+        <div id="sentence" class="sentence-box"></div>
+        <button onclick="checkSpecialSentence()">Проверить</button>
+        <button onclick="clearSentence()">Стереть</button>
+        <p id="sentenceResult"></p>
+    </div>
+    
+    <!-- Упражнение 3 -->
+    <button class="start-btn" onclick="toggleExercise('ex3')">Упражнение 3 — Present Simple или Continuous?</button>
+    <div id="ex3" class="exercise">
+        <div class="task">
+            <p>1. Look! She ___ (dance).</p>
+            <input type="text" id="q1">
+        </div>
+        <div class="task">
+            <p>2. He usually ___ (go) to school by bus.</p>
+            <input type="text" id="q2">
+        </div>
+        <div class="task">
+            <p>3. We ___ (study) English now.</p>
+            <input type="text" id="q3">
+        </div>
+        <button onclick="alert('Эта функция в разработке')">Проверить</button>
+        <p id="mixedResult"></p>
+    </div>
+</div>

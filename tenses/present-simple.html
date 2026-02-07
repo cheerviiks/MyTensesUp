@@ -1,0 +1,147 @@
+<div class="tense">
+    <h2>Present Simple</h2>
+    <p class="intro">Present Simple — это время, которое мы используем, когда говорим о том, что происходит обычно, регулярно или всегда.</p>
+    
+    <ul>
+        <li>о привычках</li>
+        <li>о фактах</li>
+        <li>о том, что правда всегда</li>
+    </ul>
+    
+    <p class="note">Это время про «как обычно».</p>
+    
+    <h3>Когда используется Present Simple</h3>
+    <h4>1. Регулярные и привычные события</h4>
+    <div class="examples">
+        <p>I wake up at 7 a.m.</p>
+        <p>She drinks coffee every morning.</p>
+        <p>We go to school on weekdays.</p>
+    </div>
+    
+    <h4>2. Факты и общеизвестные истины</h4>
+    <div class="examples">
+        <p>The sun rises in the east.</p>
+        <p>Water boils at 100 degrees.</p>
+        <p>Cats like milk.</p>
+    </div>
+    
+    <h4>3. Постоянные состояния</h4>
+    <div class="examples">
+        <p>I like chocolate.</p>
+        <p>He knows this answer.</p>
+        <p>She lives in Berlin.</p>
+    </div>
+    
+    <h3>Как образуется Present Simple</h3>
+    <div class="formula">
+        <p><strong>I / You / We / They</strong> + глагол</p>
+        <p>I work. You play football. We study English.</p>
+    </div>
+    <div class="formula">
+        <p><strong>He / She / It</strong> + глагол + <strong>-s / -es</strong></p>
+        <p>He works. She plays the piano.</p>
+    </div>
+    
+    <h3>Упражнения</h3>
+    
+    <!-- Упражнение 1 -->
+    <button class="start-btn" onclick="toggleExercise('exercise1')">Упражнение 1 - выбери нужную форму</button>
+    <div id="exercise1" class="exercise">
+        
+        <div class="task">
+            <p>1. She ___ (play) the piano every day.</p>
+            <button onclick="check(this,false)">play</button>
+            <button onclick="check(this,true)">plays</button>
+            <button onclick="check(this,false)">playing</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>2. They ___ (live) in France.</p>
+            <button onclick="check(this,true)">live</button>
+            <button onclick="check(this,false)">lives</button>
+            <button onclick="check(this,false)">living</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>3. He ___ (go) to school every morning.</p>
+            <button onclick="check(this,false)">go</button>
+            <button onclick="check(this,true)">goes</button>
+            <button onclick="check(this,false)">going</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>4. We ___ (study) English at school.</p>
+            <button onclick="check(this,true)">study</button>
+            <button onclick="check(this,false)">studies</button>
+            <button onclick="check(this,false)">studying</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>5. She ___ (study) English every evening.</p>
+            <button onclick="check(this,false)">study</button>
+            <button onclick="check(this,true)">studies</button>
+            <button onclick="check(this,false)">studying</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>6. My brother ___ (watch) TV after dinner.</p>
+            <button onclick="check(this,false)">watch</button>
+            <button onclick="check(this,true)">watches</button>
+            <button onclick="check(this,false)">watching</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>7. Cats ___ (like) milk.</p>
+            <button onclick="check(this,true)">like</button>
+            <button onclick="check(this,false)">likes</button>
+            <button onclick="check(this,false)">liking</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>8. He ___ (have) breakfast at 8 a.m.</p>
+            <button onclick="check(this,false)">have</button>
+            <button onclick="check(this,true)">has</button>
+            <button onclick="check(this,false)">having</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>9. _ you _ (like) coffee?</p>
+            <button onclick="check(this,true)">Do you like</button>
+            <button onclick="check(this,false)">Does you like</button>
+            <button onclick="check(this,false)">Are you like</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>10. She _ not _ (work) on Sundays.</p>
+            <button onclick="check(this,false)">do not works</button>
+            <button onclick="check(this,true)">does not work</button>
+            <button onclick="check(this,false)">does not works</button>
+            <p class="result"></p>
+        </div>
+    </div>
+    
+        <!-- Упражнение 2 -->
+    <button class="start-btn" onclick="toggleExercise('exercise2')">
+        Упражнение 2 — установите правильный порядок слов
+    </button>
+
+    <div id="exercise2" class="exercise">
+    <div class="task">
+        <div class="words">
+            <span class="task-number">1.</span>
+
+            <button onclick="addWord(this)">She</button>
+            <button onclick="addWord(this)">plays</button>
+            <button onclick="addWord(this)">tennis</button>
+            <button onclick="addWord(this)">every</button>
+            <button onclick="addWord(this)">weekend</button>
+        </div>
+
+        <p class="sentence" data-answer="She plays tennis every weekend"></p>
+
+        <button onclick="checkSentence(this)">Проверить</button>
+        <button onclick="clearOrder(this)">Стереть</button>
+
+        <p class="result"></p>
+    </div>
+

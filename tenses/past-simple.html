@@ -1,0 +1,135 @@
+<div class="tense">
+    <h2>Past Simple</h2>
+    <p class="intro">Past Simple — это время, которое мы используем, когда говорим о действиях, которые произошли в прошлом и закончились.</p>
+    <ul>
+        <li>о завершенных действиях в прошлом</li>
+        <li>о последовательных событиях в прошлом</li>
+        <li>о привычках в прошлом</li>
+    </ul>
+    <p class="note">Это время про «что было».</p>
+    
+    <h3>Когда используется Past Simple</h3>
+    <h4>1. Завершенные действия в прошлом</h4>
+    <div class="examples">
+        <p>I visited London last year.</p>
+        <p>She finished her work yesterday.</p>
+        <p>They bought a car in 2020.</p>
+    </div>
+    
+    <h4>2. Последовательные события в прошлом</h4>
+    <div class="examples">
+        <p>I woke up, had breakfast, and went to work.</p>
+        <p>She opened the door, entered the room, and sat down.</p>
+    </div>
+    
+    <h4>3. Привычки в прошлом</h4>
+    <div class="examples">
+        <p>When I was a child, I played football every day.</p>
+        <p>He always walked to school when he lived here.</p>
+    </div>
+    
+    <h3>Как образуется Past Simple</h3>
+    <div class="formula">
+        <p><strong>Правильные глаголы:</strong> глагол + <strong>-ed</strong></p>
+        <p>work → worked, play → played, watch → watched</p>
+    </div>
+    <div class="formula">
+        <p><strong>Неправильные глаголы:</strong> вторая форма глагола</p>
+        <p>go → went, eat → ate, see → saw, have → had</p>
+    </div>
+    
+    <h4>Примеры:</h4>
+    <div class="examples">
+        <p>I <strong>worked</strong> yesterday. (правильный)</p>
+        <p>She <strong>went</strong> to school. (неправильный)</p>
+        <p>We <strong>watched</strong> a movie. (правильный)</p>
+        <p>He <strong>ate</strong> pizza. (неправильный)</p>
+    </div>
+    
+    <h3>Упражнения</h3>
+    
+    <button class="start-btn" onclick="toggleExercise('past-exercise1')">Упражнение 1 - выбери правильную форму</button>
+    <div id="past-exercise1" class="exercise">
+        <div class="task">
+            <p>1. Yesterday, I ___ (go) to the cinema.</p>
+            <button onclick="check(this,true)">went</button>
+            <button onclick="check(this,false)">goed</button>
+            <button onclick="check(this,false)">goes</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>2. She ___ (watch) TV last night.</p>
+            <button onclick="check(this,true)">watched</button>
+            <button onclick="check(this,false)">watch</button>
+            <button onclick="check(this,false)">watches</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>3. They ___ (eat) pizza yesterday.</p>
+            <button onclick="check(this,true)">ate</button>
+            <button onclick="check(this,false)">eated</button>
+            <button onclick="check(this,false)">eats</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>4. We ___ (play) football last weekend.</p>
+            <button onclick="check(this,true)">played</button>
+            <button onclick="check(this,false)">play</button>
+            <button onclick="check(this,false)">plays</button>
+            <p class="result"></p>
+        </div>
+        <div class="task">
+            <p>5. He ___ (have) breakfast at 8 a.m. yesterday.</p>
+            <button onclick="check(this,true)">had</button>
+            <button onclick="check(this,false)">haved</button>
+            <button onclick="check(this,false)">has</button>
+            <p class="result"></p>
+        </div>
+    </div>
+    
+    <button class="start-btn" onclick="toggleExercise('past-exercise2')">Упражнение 2 - составь предложение</button>
+    <div id="past-exercise2" class="exercise">
+        <div class="task">
+            <p>Составь предложение в Past Simple:</p>
+            <div class="words">
+                <button onclick="addWord(this)">I</button>
+                <button onclick="addWord(this)">visited</button>
+                <button onclick="addWord(this)">my</button>
+                <button onclick="addWord(this)">grandparents</button>
+                <button onclick="addWord(this)">last</button>
+                <button onclick="addWord(this)">week</button>
+            </div>
+            <p class="sentence" data-answer="I visited my grandparents last week."></p>
+            <button onclick="checkSentence(this)">Проверить</button>
+            <p class="result"></p>
+        </div>
+    </div>
+    
+    <button class="start-btn" onclick="toggleExercise('past-exercise3')">Упражнение 3 - правильные и неправильные глаголы</button>
+    <div id="past-exercise3" class="exercise">
+        <div class="task">
+            <p>Выбери правильную форму Past Simple:</p>
+            <div class="task">
+                <p>1. see → </p>
+                <button onclick="check(this,true)">saw</button>
+                <button onclick="check(this,false)">seed</button>
+                <button onclick="check(this,false)">seeed</button>
+                <p class="result"></p>
+            </div>
+            <div class="task">
+                <p>2. study → </p>
+                <button onclick="check(this,true)">studied</button>
+                <button onclick="check(this,false)">studyed</button>
+                <button onclick="check(this,false)">studyd</button>
+                <p class="result"></p>
+            </div>
+            <div class="task">
+                <p>3. take → </p>
+                <button onclick="check(this,true)">took</button>
+                <button onclick="check(this,false)">taked</button>
+                <button onclick="check(this,false)">tooked</button>
+                <p class="result"></p>
+            </div>
+        </div>
+    </div>
+</div>

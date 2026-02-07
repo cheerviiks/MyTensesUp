@@ -1,0 +1,246 @@
+/* Ваш существующий CSS + дополнения
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #5dade2;
+}
+
+.error {
+    background: #ffebee;
+    color: #c62828;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.error button {
+    margin-top: 10px;
+    background: #ff5252;
+    color: white;
+}
+
+/* Улучшения для упражнений */
+/* .words {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.words button, .words span {
+    padding: 8px 12px;
+    background: #e3f2fd;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+} */
+
+/* .words button:hover:not(:disabled),
+.words span:hover:not([style*="opacity: 0.5"]) {
+    background: #bbdefb;
+    transform: translateY(-2px);
+}
+
+.words button:disabled {
+    background: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.sentence {
+    min-height: 40px;
+    padding: 10px;
+    background: white;
+    border: 2px dashed #b3e5fc;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.result {
+    font-weight: bold;
+    margin-top: 10px;
+    min-height: 24px;
+}
+
+/* Адаптивность */
+/* @media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .tense {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    
+    .words {
+        gap: 6px;
+    }
+    
+    .words button, .words span {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+} */ 
+
+/* ====== ОСНОВА ====== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef6ff;
+    color: #03396c;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ====== ШАПКА ====== */
+header {
+    background: #b3e5ff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ====== КНОПКИ ====== */
+button {
+    margin: 5px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #5dade2;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.words button:hover {
+    background: #e6f3ff;
+}
+.task button:hover {
+    background: #e6f3ff;
+}
+
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.start-btn {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #cfe9ff;
+    color: #03396c;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* ====== УРОВНИ ====== */
+.levels {
+    padding: 20px;
+}
+
+.level {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* ====== ТЕМА (ВРЕМЯ) ====== */
+.tense {
+    max-width: 720px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.tense h2 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+
+.tense h3 {
+    margin-top: 30px;
+}
+
+.examples,
+.formula {
+    background: #f3f8ff;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin: 12px 0;
+}
+
+.note {
+    font-style: italic;
+}
+
+/* ====== УПРАЖНЕНИЯ ====== */
+.exercise {
+    display: none;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f3f8ff;
+}
+
+.exercise.active {
+    display: block;
+}
+
+.task button {
+    background: #ffffff;
+    color: #03396c;
+
+}
+
+/* ====== СЛУЖЕБНОЕ ====== */
+.hidden {
+    display: none;
+}
+
+.back {
+    background: transparent;
+    color: #03396c;
+    font-size: 14px;
+}
+
+
+.words {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.task-number {
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.sentence {
+    min-height: 40px;
+    padding: 8px 12px;
+    margin: 10px 0;
+
+    border: 2px dashed #4a90e2;
+    border-radius: 8px;
+
+    font-size: 16px;
+    background: #f5faff;
+}
+.sentence.active {
+    border-color: #ffffff;
+
+}
+
+
