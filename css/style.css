@@ -165,7 +165,7 @@ button:disabled {
 
 .tense h2 {
     margin-top: 0;
-    color: #1a73e8;
+    color: #03396c;
 }
 
 .tense h3 {
@@ -281,6 +281,8 @@ tbody tr:first-child {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
+
 }
 
 .task-number {
