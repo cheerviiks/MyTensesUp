@@ -180,9 +180,33 @@ button:disabled {
     margin: 12px 0;
 }
 
-.note {
-    font-style: italic;
+/* ====== ТАБЛИЦЫ ====== */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-bottom: 20px;
 }
+
+th {
+    background: #cfe9ff;
+    padding: 12px;
+    text-align: left;
+    border-radius: 8px;
+}
+
+td {
+    background: #ffffff;
+    padding: 14px 12px;
+    vertical-align: top;
+    border-radius: 8px;
+}
+
+tbody tr:nth-child(even) td {
+    background: #f3f8ff;
+}
+
+
 
 /* ====== УПРАЖНЕНИЯ ====== */
 .exercise {
@@ -303,3 +327,30 @@ button:disabled {
     }
 }
 
+@media (max-width: 700px) {
+    table, thead, tbody, th, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 12px;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #1a73e8;
+        min-width: 110px;
+    }
+}
