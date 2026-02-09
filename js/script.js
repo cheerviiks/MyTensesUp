@@ -19,7 +19,6 @@ function check(button, correct) {
     }
 }
 
-// Открыть/закрыть упражнение
 function toggleExercise(id) {
     console.log('toggleExercise вызван для id:', id);
     const block = document.getElementById(id);
@@ -36,7 +35,6 @@ function toggleExercise(id) {
     console.log('Новые классы:', block.className);
 }
 
-// Добавить слово в предложение
 function addWord(btn) {
     console.log('addWord вызвана');
     const task = btn.closest('.task');
@@ -126,10 +124,6 @@ function clearInputs(exerciseId) {
 }
 
 
-
-// ========== НАВИГАЦИЯ ==========
-
-// Загрузка времени
 async function loadTense(tenseName) {
     try {
         console.log('Загружаем время:', tenseName);
@@ -141,32 +135,26 @@ async function loadTense(tenseName) {
         }
         
         const html = await response.text();
-        
-        // Скрываем меню
+
         document.getElementById('levels-menu').style.display = 'none';
         
-        // Вставляем контент
         const container = document.getElementById('tense-container');
         container.innerHTML = html;
         
-        // Добавляем кнопку "Назад"
         const backButton = document.createElement('button');
         backButton.className = 'back';
         backButton.innerHTML = '← Назад к уровням';
         backButton.onclick = goHome;
         container.insertBefore(backButton, container.firstChild);
         
-        // Ждем немного и проверяем загрузку функций
         setTimeout(() => {
             console.log('Загружено время:', tenseName);
             console.log('toggleExercise доступна?', typeof toggleExercise);
             console.log('check доступна?', typeof check);
             
-            // Проверяем кнопки на странице
             const buttons = container.querySelectorAll('button');
             console.log('Кнопок на странице:', buttons.length);
             
-            // Проверяем кнопки упражнений
             const startBtns = container.querySelectorAll('.start-btn');
             console.log('Кнопок .start-btn:', startBtns.length);
             
@@ -188,16 +176,12 @@ async function loadTense(tenseName) {
     }
 }
 
-// Возврат на главную
 function goHome() {
     console.log('Возвращаемся на главную');
     document.getElementById('tense-container').innerHTML = '';
     document.getElementById('levels-menu').style.display = 'block';
 }
 
-// ========== ИНИЦИАЛИЗАЦИЯ ==========
-
-// Инициализация при загрузке страницы
 document.addEventListener('DOMContentLoaded', function() {
     console.log('========== TensesUp загружен ==========');
     console.log('Все функции доступны:');
@@ -206,7 +190,6 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('- addWord:', typeof addWord);
     console.log('- checkSentence:', typeof checkSentence);
     
-    // Назначаем обработчики кнопок навигации
     const btnIds = [
 'btn-present-simple',
 'btn-present-continuous',
